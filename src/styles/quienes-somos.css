@@ -230,7 +230,5 @@
       .tl-dot{left:-34px}
     }
   
-/* Canvas wrap for animated Squares grid */
-.grid-canvas-wrap{position:absolute;inset:0;z-index:0;pointer-events:none}
-.hero, .subhero, .final-cta{position:relative}
-.hero > *:not(.grid-canvas-wrap), .subhero > *:not(.grid-canvas-wrap), .final-cta > *:not(.grid-canvas-wrap){position:relative;z-index:1}
+/* Animated Squares canvas wrapper */
+.grid-canvas-wrap{position:absolute;inset:0;z-index:0;pointer-events:none;overflow:hidden}

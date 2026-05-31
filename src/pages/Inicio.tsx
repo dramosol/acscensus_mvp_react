@@ -4,6 +4,8 @@ import Squares from '../components/Squares';
 import { openContactModal } from '../components/contactEvents';
 import '../styles/inicio.css';
 
+const BASE = import.meta.env.BASE_URL;
+
 export default function Inicio() {
   usePageEffects();
 
@@ -22,7 +24,7 @@ export default function Inicio() {
           hoverFillColor="rgba(198,170,76,0.08)"
         />
       </div>
-      <img src="bull_transparent.png" id="heroBull" className="hero-bull" alt="Símbolo de fortaleza patrimonial" width="756" height="1024" />
+      <img src={`${BASE}bull_transparent.png`} id="heroBull" className="hero-bull" alt="Símbolo de fortaleza patrimonial" width="756" height="1024" />
       <div className="container">
         <div className="hero-inner">
           <div className="eyebrow reveal">Oficina de Administración Patrimonial</div>
@@ -69,7 +71,7 @@ export default function Inicio() {
         </div>
         <div className="socio-grid">
           <div className="socio-photo">
-            <img src="erick-profile.webp" alt="Eric Rojas Z." width="640" height="856" />
+            <img src={`${BASE}erick-profile.webp`} alt="Eric Rojas Z." width="640" height="856" />
           </div>
           <div className="reveal delay-2">
             <div className="socio-titulo">Socio Principal &amp; Director General</div>

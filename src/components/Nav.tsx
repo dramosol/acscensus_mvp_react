@@ -2,6 +2,8 @@ import { useEffect, useState } from 'react';
 import { NavLink } from 'react-router-dom';
 import { openContactModal } from './contactEvents';
 
+const BASE = import.meta.env.BASE_URL;
+
 export default function Nav() {
   const [mobileOpen, setMobileOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);
@@ -31,7 +33,7 @@ export default function Nav() {
     <nav className={navClass} id="nav">
       <div className="container nav-inner">
         <NavLink to="/" className="brand" aria-label="Ascensus Strategic" onClick={() => setMobileOpen(false)}>
-          <img className="brand-mark" src="letra_logo.png" alt="Ascensus Strategic" width="197" height="240" />
+          <img className="brand-mark" src={`${BASE}letra_logo.png`} alt="Ascensus Strategic" width="197" height="240" />
           <span className="brand-words">Ascensus <span>Strategic</span></span>
         </NavLink>
         <ul className="nav-links">
