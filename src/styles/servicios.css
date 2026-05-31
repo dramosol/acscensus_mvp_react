@@ -1,4 +1,25 @@
-*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+
+    :root {
+      --bg: #0A0A0A;
+      --bg-soft: #121212;
+      --bg-elev: #181C24;
+      --line: rgba(198,170,76,.18);
+      --line-soft: rgba(255,255,255,.06);
+      --gold: #C6AA4C;
+      --gold-soft: #B09840;
+      --gold-dim: rgba(198,170,76,.55);
+      --gold-glow: rgba(198,170,76,.12);
+      --text: #F5F3EF;
+      --text-dim: #A8A090;
+      --text-mute: #6E6960;
+      --serif: "Playfair Display","Times New Roman",serif;
+      --accent: "Cormorant Garamond","Times New Roman",serif;
+      --sans: "Montserrat",system-ui,-apple-system,sans-serif;
+      --maxw: 1240px;
+      --ease: cubic-bezier(.25,.1,.25,1);
+      --ease-out: cubic-bezier(0,0,.2,1);
+    }
+    *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
     html{scroll-behavior:smooth}
     body{background:linear-gradient(180deg,#0A0A0A 0%,#0F0F11 25%,#121214 55%,#0A0A0A 100%);color:var(--text);font-family:var(--sans);font-weight:300;line-height:1.65;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale;overflow-x:hidden}
     img{max-width:100%;display:block}
@@ -24,6 +45,20 @@
     .nav-toggle{display:none;background:transparent;border:1px solid var(--line);color:var(--text);width:42px;height:42px;align-items:center;justify-content:center;cursor:pointer}
     .nav-toggle svg{width:18px;height:18px;pointer-events:none}
     .mobile-menu{display:none;flex-direction:column}
+    .modal-overlay{position:fixed;inset:0;z-index:2000;background:rgba(10,10,10,.9);display:flex;align-items:center;justify-content:center;opacity:0;visibility:hidden;transition:opacity .3s,visibility .3s;padding:20px}
+    .modal-overlay.open{opacity:1;visibility:visible}
+    .modal-box{background:var(--bg-elev);border:1px solid var(--line);border-radius:4px;padding:52px 48px;width:min(520px,90vw);position:relative;transform:translateY(20px);transition:transform .3s var(--ease-out)}
+    .modal-overlay.open .modal-box{transform:translateY(0)}
+    .modal-close{position:absolute;top:20px;right:20px;background:transparent;border:1px solid var(--line-soft);color:var(--text-mute);width:36px;height:36px;border-radius:50%;cursor:pointer;font-size:16px;display:flex;align-items:center;justify-content:center;transition:all .25s}
+    .modal-close:hover{border-color:var(--gold);color:var(--gold)}
+    .modal-eyebrow{font-size:10px;letter-spacing:.24em;text-transform:uppercase;color:var(--gold);margin-bottom:20px}
+    .modal-title{font-family:var(--serif);font-size:28px;font-weight:400;margin-bottom:32px;line-height:1.2}
+    .modal-title em{font-family:var(--accent);font-style:italic;color:var(--gold);font-size:1.08em}
+    .form-group{margin-bottom:20px}
+    .form-group label{display:block;font-size:11px;letter-spacing:.18em;text-transform:uppercase;color:var(--text-dim);margin-bottom:8px}
+    .form-group input,.form-group textarea{width:100%;background:var(--bg);border:1px solid var(--line-soft);color:var(--text);font-family:var(--sans);font-size:14px;font-weight:300;padding:14px 16px;border-radius:2px;outline:none;transition:border-color .25s}
+    .form-group input:focus,.form-group textarea:focus{border-color:var(--gold)}
+    .form-group textarea{resize:vertical;min-height:120px}
     .hero{position:relative;min-height:100vh;display:flex;align-items:center;padding:140px 0 120px;overflow:hidden;background:#0A0A0A}
     .hero::before{content:'';position:absolute;inset:0;background:radial-gradient(ellipse 55% 80% at 88% 55%,rgba(198,170,76,.06),transparent 65%);pointer-events:none;z-index:0}
     .hero>.container{width:100%;display:grid;grid-template-columns:55fr 45fr;position:relative;z-index:1}
@@ -174,6 +209,7 @@
       .hero-inner{padding-right:0}
       .hero-bull{opacity:.18!important;right:-15%;height:70%}
       .hero-line,.scroll-dot{display:none}
+      .modal-box{padding:36px 24px}
       .profiles-grid{grid-template-columns:1fr}
       .alianzas-grid{grid-template-columns:1fr}
     }
@@ -183,3 +219,8 @@
       .btn{justify-content:center}
       .process-grid{grid-template-columns:1fr}
     }
+  
+/* Canvas wrap for animated Squares grid */
+.grid-canvas-wrap{position:absolute;inset:0;z-index:0;pointer-events:none}
+.hero, .subhero, .final-cta{position:relative}
+.hero > *:not(.grid-canvas-wrap), .subhero > *:not(.grid-canvas-wrap), .final-cta > *:not(.grid-canvas-wrap){position:relative;z-index:1}

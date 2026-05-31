@@ -1,15 +1,1 @@
-.modal-overlay{position:fixed;inset:0;z-index:2000;background:rgba(10,10,10,.9);display:flex;align-items:center;justify-content:center;opacity:0;visibility:hidden;transition:opacity .3s,visibility .3s;padding:20px}
-    .modal-overlay.open{opacity:1;visibility:visible}
-    .modal-box{background:var(--bg-elev);border:1px solid var(--line);border-radius:4px;padding:52px 48px;width:min(520px,90vw);position:relative;transform:translateY(20px);transition:transform .3s var(--ease-out)}
-    .modal-overlay.open .modal-box{transform:translateY(0)}
-    .modal-close{position:absolute;top:20px;right:20px;background:transparent;border:1px solid var(--line-soft);color:var(--text-mute);width:36px;height:36px;border-radius:50%;cursor:pointer;font-size:16px;display:flex;align-items:center;justify-content:center;transition:all .25s}
-    .modal-close:hover{border-color:var(--gold);color:var(--gold)}
-    .modal-eyebrow{font-size:10px;letter-spacing:.24em;text-transform:uppercase;color:var(--gold);margin-bottom:20px}
-    .modal-title{font-family:var(--serif);font-size:28px;font-weight:400;margin-bottom:32px;line-height:1.2}
-    .modal-title em{font-family:var(--accent);font-style:italic;color:var(--gold);font-size:1.08em}
-    .form-group{margin-bottom:20px}
-    .form-group label{display:block;font-size:11px;letter-spacing:.18em;text-transform:uppercase;color:var(--text-dim);margin-bottom:8px}
-    .form-group input,.form-group textarea{width:100%;background:var(--bg);border:1px solid var(--line-soft);color:var(--text);font-family:var(--sans);font-size:14px;font-weight:300;padding:14px 16px;border-radius:2px;outline:none;transition:border-color .25s}
-    .form-group input:focus,.form-group textarea:focus{border-color:var(--gold)}
-    .form-group textarea{resize:vertical;min-height:120px}
-      .modal-box{padding:36px 24px}
+/* superseded by per-page CSS extracted verbatim from source HTML */

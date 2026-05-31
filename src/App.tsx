@@ -2,9 +2,9 @@ import { Outlet } from 'react-router-dom';
 import Nav from './components/Nav';
 import Footer from './components/Footer';
 import ContactModal from './components/ContactModal';
-import './styles/tokens.css';
-import './styles/base.css';
-import './styles/modal.css';
+import './styles/inicio.css';
+import './styles/servicios.css';
+import './styles/quienes-somos.css';
 
 export default function App() {
   return (
