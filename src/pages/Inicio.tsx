@@ -34,7 +34,6 @@ export default function Inicio() {
           </div>
         </div>
       </div>
-      <div className="scroll-hint">Desplácese</div>
     </section>
 
     <section className="metrics" aria-label="Indicadores destacados">
