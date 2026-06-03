@@ -85,41 +85,6 @@ export default function Servicios() {
       <div className="container">
         <div className="section-head reveal">
           <div>
-            <div className="section-tag">Perfiles de inversión</div>
-            <h2 className="section-title">Encontramos el perfil que <em>encaja</em> con sus metas</h2>
-          </div>
-          <p className="section-sub">Cada perfil responde a un balance entre retorno objetivo y tolerancia al riesgo.</p>
-        </div>
-        <div className="profiles-grid">
-          <article className="profile reveal">
-            <div className="profile-tag">Perfil estratégico</div>
-            <h3 className="profile-name">Conservador</h3>
-            <div className="profile-return">6–8%</div>
-            <p className="profile-instruments">Renta fija, seguros con ahorro y planes estructurados.</p>
-            <div className="profile-priority">Preservación del capital</div>
-          </article>
-          <article className="profile reveal delay-1">
-            <div className="profile-tag">Perfil estratégico</div>
-            <h3 className="profile-name">Moderado</h3>
-            <div className="profile-return">10–14%</div>
-            <p className="profile-instruments">Combinación de renta fija, variable y real estate.</p>
-            <div className="profile-priority">Crecimiento moderado</div>
-          </article>
-          <article className="profile reveal delay-2">
-            <div className="profile-tag">Perfil estratégico</div>
-            <h3 className="profile-name">Agresivo</h3>
-            <div className="profile-return">16–20%</div>
-            <p className="profile-instruments">Alta exposición a renta variable y mercados internacionales.</p>
-            <div className="profile-priority">Máximo crecimiento</div>
-          </article>
-        </div>
-      </div>
-    </section>
-
-    <section className="block">
-      <div className="container">
-        <div className="section-head reveal">
-          <div>
             <div className="section-tag">Alianzas</div>
             <h2 className="section-title">Respaldados por <em>socios</em> de clase mundial</h2>
           </div>
