@@ -51,8 +51,8 @@
     .modal-overlay.open .modal-box{transform:translateY(0)}
     .modal-close{position:absolute;top:20px;right:20px;background:transparent;border:1px solid var(--line-soft);color:var(--text-mute);width:36px;height:36px;border-radius:50%;cursor:pointer;font-size:16px;display:flex;align-items:center;justify-content:center;transition:all .25s}
     .modal-close:hover{border-color:var(--gold);color:var(--gold)}
-    .modal-success{display:flex;flex-direction:column;align-items:center;text-align:center;padding:32px 0 16px;gap:20px}
-    .modal-success-icon{width:56px;height:56px;border-radius:50%;border:1px solid var(--gold);display:flex;align-items:center;justify-content:center;font-size:22px;color:var(--gold)}
+    .modal-success{display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;padding:48px 0 32px;gap:24px;min-height:200px}
+    .modal-success-icon{width:96px;height:96px;border-radius:50%;border:2px solid var(--gold);display:flex;align-items:center;justify-content:center;font-size:44px;color:var(--gold)}
     .modal-success p{font-size:15px;color:var(--text-dim);line-height:1.75}
     .modal-error{font-size:13px;color:#e07070;margin-bottom:16px;line-height:1.5}
     .modal-eyebrow{font-size:10px;letter-spacing:.24em;text-transform:uppercase;color:var(--gold);margin-bottom:20px}

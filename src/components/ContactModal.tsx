@@ -52,8 +52,12 @@ export default function ContactModal() {
     <div className={`modal-overlay${open ? ' open' : ''}`} role="dialog" aria-modal="true" aria-labelledby="modalTitle" onClick={handleOverlayClick}>
       <div className="modal-box">
         <button className="modal-close" aria-label="Cerrar" onClick={() => setOpen(false)}>✕</button>
-        <div className="modal-eyebrow">Conversación privada</div>
-        <h3 className="modal-title" id="modalTitle">Envíenos su <em>consulta</em></h3>
+        {status !== 'success' && (
+          <>
+            <div className="modal-eyebrow">Conversación privada</div>
+            <h3 className="modal-title" id="modalTitle">Envíenos su <em>consulta</em></h3>
+          </>
+        )}
 
         {status === 'success' ? (
           <div className="modal-success">
