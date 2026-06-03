@@ -44,6 +44,7 @@ export default function ContactModal() {
               <option value="seguros-vida">Seguros de Vida con Ahorro</option>
               <option value="real-estate">Real Estate</option>
               <option value="asesoria-legal">Asesoría Legal de Activos</option>
+              <option value="ia-datos">IA &amp; Análisis de Datos</option>
               <option value="otro">Otro / Consulta general</option>
             </select>
           </div>
