@@ -29,7 +29,7 @@ export default function Inicio() {
           <h1 id="hero-title" className="reveal delay-1">Protegemos y hacemos crecer su <em>patrimonio</em>. Con la discreción que su legado merece.</h1>
           <p className="reveal delay-2">Asesoría financiera independiente para familias, empresarios e inversionistas que buscan estrategias a la medida, gestión profesional y resultados consistentes en el largo plazo.</p>
           <div className="cta-row reveal delay-3">
-            <button onClick={openContactModal} className="btn btn-primary">Agendar consulta privada</button>
+            <button onClick={openContactModal} className="btn btn-primary">Conversemos</button>
             <Link to="/servicios" className="btn btn-ghost">Conocer servicios</Link>
           </div>
         </div>
@@ -137,7 +137,7 @@ export default function Inicio() {
           <h2>Conversemos sobre el <em>futuro</em> de su patrimonio.</h2>
           <p>Agende una consulta privada con nuestro equipo. Le acompañaremos en cada paso, con la confidencialidad y la atención que su caso requiere.</p>
           <div className="cta-row" style={{justifyContent: 'center'}}>
-            <button onClick={openContactModal} className="btn btn-primary">Agendar consulta privada</button>
+            <button onClick={openContactModal} className="btn btn-primary">Conversemos</button>
           </div>
           <div className="contact-inline" aria-label="Información de contacto">
             <span><a href="mailto:info@ascentrategic.com">info@ascentrategic.com</a></span>

@@ -41,7 +41,7 @@ export default function Nav() {
           <li><NavLink to="/servicios">Servicios</NavLink></li>
           <li><NavLink to="/quienes-somos">Quiénes Somos</NavLink></li>
         </ul>
-        <button className="nav-cta" onClick={openContactModal}>Agendar consulta</button>
+        <button className="nav-cta" onClick={openContactModal}>Conversemos</button>
         <button className="nav-toggle" aria-label="Abrir menú" onClick={() => setMobileOpen((value) => !value)}>
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5"><line x1="3" y1="7" x2="21" y2="7"/><line x1="3" y1="17" x2="21" y2="17"/></svg>
         </button>
@@ -51,7 +51,7 @@ export default function Nav() {
           <NavLink to="/" end onClick={() => setMobileOpen(false)}>Inicio</NavLink>
           <NavLink to="/servicios" onClick={() => setMobileOpen(false)}>Servicios</NavLink>
           <NavLink to="/quienes-somos" onClick={() => setMobileOpen(false)}>Quiénes Somos</NavLink>
-          <button onClick={openContactModal} className="btn btn-primary" style={{ marginTop: '20px', alignSelf: 'flex-start', border: 'none' }}>Agendar consulta</button>
+          <button onClick={openContactModal} className="btn btn-primary" style={{ marginTop: '20px', alignSelf: 'flex-start', border: 'none' }}>Conversemos</button>
         </div>
       </div>
     </nav>

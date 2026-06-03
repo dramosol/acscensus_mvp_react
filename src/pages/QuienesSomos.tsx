@@ -134,7 +134,7 @@ export default function QuienesSomos() {
           <h2>¿Listo para proteger su <em>patrimonio</em>?</h2>
           <p>Agende una consulta privada con nuestro equipo en Escazú. Solo con cita previa.</p>
           <div className="cta-row" style={{justifyContent: 'center'}}>
-            <button onClick={openContactModal} className="btn btn-primary">Agendar consulta privada</button>
+            <button onClick={openContactModal} className="btn btn-primary">Conversemos</button>
           </div>
           <div className="contact-inline">
             <span><a href="mailto:info@ascentrategic.com">info@ascentrategic.com</a></span>
