@@ -193,6 +193,7 @@
       .metric{border-top:1px solid var(--line-soft)}
       .nav-links,.nav-cta{display:none}
       .nav-toggle{display:flex}
+      .nav.mobile-open{background:rgba(10,10,10,.97);backdrop-filter:blur(20px);-webkit-backdrop-filter:blur(20px);border-bottom:1px solid var(--line)}
       .nav.mobile-open .mobile-menu{display:flex;flex-direction:column;gap:0;padding:12px 0 24px;border-top:1px solid var(--line-soft)}
       .mobile-menu a{padding:16px 40px;font-size:13px;letter-spacing:.12em;text-transform:uppercase;color:var(--text-dim);border-bottom:1px solid var(--line-soft);transition:color .25s}
       .mobile-menu a:hover{color:var(--gold)}
